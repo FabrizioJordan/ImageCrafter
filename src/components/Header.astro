@@ -1,0 +1,71 @@
+---
+---
+
+<header class="w-full max-w-5xl m-auto py-4 px-4 lg:px-0 flex flex-row justify-between items-center">
+
+    <div class="flex flex-row gap-4 justify-center items-center">
+        <a class="" href="">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#000"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass-empty"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z" /><path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z" /></svg>
+        </a>
+
+        <h1 class="text-xl font-bold">Image Crafter</h1>
+    </div>
+
+    <nav class="hidden md:flex flex-row gap-6 justify-center items-center font-medium">
+        <a class="" href="">
+            Home
+        </a>
+        <a href="">
+            Explore
+        </a>
+        <a href="">
+            For Business
+        </a>
+        <a href="">
+            Help
+        </a>
+        <a class="py-1.5 px-3.5 text-white bg-black transition-colors duration-300 hover:bg-[#363636] rounded-lg" href="">
+            Sign In
+        </a>
+        <a class="py-1.5 px-3.5 text-black bg-[#e4e4e4] transition-colors duration-300 hover:bg-[#b3b3b3] rounded-lg" href="">
+            Sign Up
+        </a>
+    </nav>
+
+    <nav class="relative flex md:hidden flex-col gap-6 justify-center items-center font-medium">
+
+        <button id="menuMobileBtn">
+            <svg class="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-align-justified"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l12 0" /></svg>
+        </button>
+        
+        <div id="menuMobile" class="absolute top-16 right-0 hidden flex flex-col bg-white rounded-lg border border-gray-300 hover:[&>A]:bg-[#dddddd] [&>A]:px-6 [&>A]:py-4">
+            <a class="rounded-t-lg" href="">
+                Home    
+            </a>
+            <a href="">
+                Explore
+            </a>
+            <a href="">
+                For Business
+            </a>
+            <a href="">
+                Help
+            </a>
+            <a class="py-1.5 px-3.5 text-nowrap text-white bg-black transition-colors duration-300 hover:!bg-[#444444]" href="">
+                Sign In
+            </a>
+            <a class="py-1.5 px-3.5 text-nowrap text-black bg-[#e4e4e4] transition-colors duration-300 hover:!bg-[#b3b3b3] rounded-b-lg" href="">
+                Sign Up
+            </a>
+        </div>
+    </nav>
+</header>
+
+<script>
+    const menuMobileBtn = document.getElementById('menuMobileBtn')
+
+    menuMobileBtn?.addEventListener('click', () => {
+        const menu = document.querySelector('#menuMobile')
+        menu?.classList.toggle('hidden')
+    })
+</script>
